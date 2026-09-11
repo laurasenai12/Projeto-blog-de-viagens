@@ -7,12 +7,19 @@ email_aluno: laura.neiva@portalsesisp.org.br
 turma: TDE-1BHH-26
 */
 
-
-.card{
+.card {
     width: 300px;
     height: 150px;
     padding: 20px;
-    border: 1px solid #b1e9fb;
-    margin: 10px;
-    box-shadow: 2px 2px 5px rgba(245, 171, 171, 0.974);
+    border: 1px solid #c0efff;
+    margin: 10px auto; 
+    box-shadow: 2px 2px 5px rgb(244, 177, 177);
+}
+.card-sobre-mim {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid #ccf4a4;
+    margin: 10px auto; 
+    box-shadow: 2px 2px 5px rgb(244, 238, 159);
 }
