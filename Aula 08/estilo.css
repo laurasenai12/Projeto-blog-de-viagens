@@ -14,3 +14,13 @@ body{
     padding: 15px;
     box-sizing: border-box;
 }
+.coluna-secundaria{
+    float: right;
+    width: 30%;
+    background-color: aliceblue;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.limpa flutuação{
+    clear: both;
+}
