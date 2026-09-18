@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota Livre - As Melhores Ofertas Estão Aqui!</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header-hero">
+        <div class="container navbar">
+            <div class="logo">
+                <img src="assets/images/Logo 2.png" alt="Logo Rota Livre" class="logo-img">
+            </div>
+            <div class="nav-right">
+                <button class="icon-btn" aria-label="Ajuda"><i class="fa-regular fa-circle-question"></i></button>
+                <button class="icon-btn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+                <a href="#" class="user-link"><i class="fa-regular fa-user"></i> Sua Conta</a>
+            </div>
+        </div>
+
+
+        <!-- Menu de Abas de Categoria --
+         <div class="container categories-nav">
+            <a href="hospedagens.html" class="cat-btn active" style="text-decoration: none;"><i class="fa-solid fa-bed"></i> Hospedagens</a>
+            <button class="cat-btn"><i class="fa-solid fa-plane"></i> Passagens</button>
+            <button class="cat-btn"><i class="fa-solid fa-ticket"></i> Passeios</button>
+            <button class="cat-btn"><i class="fa-solid fa-ferris-wheel"></i> Atrações</button>
+            <button class="cat-btn"><i class="fa-solid fa-percent"></i> Promoções</button>
+            <button class="cat-btn"><i class="fa-solid fa-car"></i> Carros</button>
+        </div>
+
+
+        <!-- Título Principal do Hero -->
+        <div class="container hero-title">
+            <h1>AS MELHORES OFERTAS ESTÃO AQUI!</h1>
+            <p>Encontre ofertas em hotéis, casas, apartamentos e muito mais...</p>
+        </div>
+
+
+        <!-- Barra de Pesquisa de Viagens -->
+        <div class="container search-bar-container">
+            <form class="search-form" onsubmit="event.preventDefault();">
+                <div class="input-group">
+                    <i class="fa-regular fa-circle"></i>
+                    <input type="text" placeholder="Origem">
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Destino">
+                </div>
+               <div class="input-group date-group">
+    <i class="fa-regular fa-calendar"></i>
+    <input type="text" placeholder="Ida" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                </div>
+               <div class="input-group date-group">
+    <i class="fa-regular fa-calendar"></i>
+    <input type="text" placeholder="Volta" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                </div>
+                <div class="input-group select-group">
+                    <i class="fa-regular fa-user"></i>
+                    <select aria-label="Número de passageiros">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i> Buscar
+                </button>
+            </form>
+        </div>
+    </header>
+
+
+    <main class="container main-section">
+        <div class="filter-tabs">
+            <button class="tab-btn active">PRAIA</button>
+            <button class="tab-btn">CIDADES</button>
+            <button class="tab-btn">NATUREZA</button>
+        </div>
+
+
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <article class="destination-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/Porto Seguro - BA" alt="Porto Seguro - BA">
+                </div>
+                <div class="card-info">
+                    <h2>PORTO SEGURO - BA</h2>
+                    <p class="subtitle">Hotel + Passagens | sex 27 nov - ter 01 dez</p>
+                    <span class="price-label">Preço por pessoa:</span>
+                    <p class="price">R$ 1242</p>
+                </div>
+            </article>
+
+
+            <!-- Card 2 -->
+            <article class="destination-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/Maceió - AL" alt="Maceió - AL">
+                </div>
+                <div class="card-info">
+                    <h2>MACEIÓ - AL</h2>
+                    <p class="subtitle">Hotel + Passagens | sex 30 nov - ter 05 dez</p>
+                    <span class="price-label">Preço por pessoa:</span>
+                    <p class="price">R$ 2716</p>
+                </div>
+            </article>
+
+
+            <!-- Card 3 -->
+            <article class="destination-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/Fortaleza - CE" alt="Fortaleza - CE">
+                </div>
+                <div class="card-info">
+                    <h2>FORTALEZA - CE</h2>
+                    <p class="subtitle">Hotel + Passagens | sex 15 nov - ter 21 nov</p>
+                    <span class="price-label">Preço por pessoa:</span>
+                    <p class="price">R$ 1666</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+
+    <!-- Rodapé Completo com Newsletter e Links -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Rota Livre</h3>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Seja um franqueado</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-col">
+                <h3>Compra segura</h3>
+                <ul>
+                    <li><a href="#">Termos e Condições</a></li>
+                    <li><a href="#">Declaração de Privacidade</a></li>
+                    <li><a href="#">Código de Conduta Ética</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-col newsletter-col">
+                <h3>Inscreva-se para receber ofertas imperdíveis.</h3>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit" class="btn-send">Enviar</button>
+                </form>
+               
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#" aria-label="E-mail"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+

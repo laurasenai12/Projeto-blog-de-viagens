@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota Livre - Hospedagens Incríveis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header-hero">
+        <div class="container navbar">
+            <a href="index.html" class="logo" style="text-decoration: none;">
+                <img src="assets/images/logo.png" alt="Logo Rota Livre" class="logo-img">
+                <span>Rota Livre</span>
+            </a>
+            <div class="nav-right">
+                <button class="icon-btn" aria-label="Ajuda"><i class="fa-regular fa-circle-question"></i></button>
+                <button class="icon-btn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+                <a href="#" class="user-link"><i class="fa-regular fa-user"></i> Sua Conta</a>
+            </div>
+        </div>
+        <div class="container categories-nav">
+            <a href="hospedagens.html" class="cat-btn active" style="text-decoration: none;"><i class="fa-solid fa-bed"></i> Hospedagens</a>
+            <a href="index.html" class="cat-btn" style="text-decoration: none;"><i class="fa-solid fa-plane"></i> Passagens</a>
+            <button class="cat-btn"><i class="fa-solid fa-ticket"></i> Passeios</button>
+            <button class="cat-btn"><i class="fa-solid fa-ferris-wheel"></i> Atrações</button>
+            <button class="cat-btn"><i class="fa-solid fa-percent"></i> Promoções</button>
+            <button class="cat-btn"><i class="fa-solid fa-car"></i> Carros</button>
+        </div>
+
+        <div class="container hero-title">
+            <h1>AS MELHORES HOSPEDAGENS PARA SUA VIAGEM!</h1>
+            <p>Hotéis, pousadas, resorts e chalés com o melhor conforto e preço...</p>
+        </div>
+    </header>
+    <main class="container main-section">
+        <div class="filter-tabs">
+            <button class="tab-btn active">HOTÉIS & RESORTS</button>
+            <button class="tab-btn">POUSADAS DE CHARME</button>
+            <button class="tab-btn">CHALÉS NA SERRA</button>
+        </div>
+
+        <div class="cards-grid">
+            <article class="destination-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/porto-seguro.jpg" alt="Resort Beira Mar">
+                </div>
+                <div class="card-info">
+                    <h2>GRAND RESORT BEIRA MAR</h2>
+                    <p class="subtitle">Porto Seguro - BA | All Inclusive</p>
+                    <span class="price-label">Diária a partir de:</span>
+                    <p class="price">R$ 480</p>
+                </div>
+            </article>
+            <article class="destination-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/maceio.jpg" alt="Pousada Paraíso Tropical">
+                </div>
+                <div class="card-info">
+                    <h2>POUSADA PARAÍSO TROPICAL</h2>
+                    <p class="subtitle">Maceió - AL | Café da manhã incluso</p>
+                    <span class="price-label">Diária a partir de:</span>
+                    <p class="price">R$ 320</p>
+                </div>
+            </article>
+            <article class="destination-card">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/fortaleza.jpg" alt="Hotel Vista das Dunas">
+                </div>
+                <div class="card-info">
+                    <h2>HOTEL VISTA DAS DUNAS</h2>
+                    <p class="subtitle">Fortaleza - CE | Vista para o mar</p>
+                    <span class="price-label">Diária a partir de:</span>
+                    <p class="price">R$ 290</p>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Rota Livre</h3>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Seja um franqueado</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Compra segura</h3>
+                <ul>
+                    <li><a href="#">Termos e Condições</a></li>
+                    <li><a href="#">Declaração de Privacidade</a></li>
+                    <li><a href="#">Código de Conduta Ética</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h3>Inscreva-se para receber ofertas imperdíveis.</h3>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit" class="btn-send">Enviar</button>
+                </form>
+                
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#" aria-label="E-mail"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,37 +1,43 @@
-body{
-    font-family: Arian, sans-serif;
+/*
+Exercícios da Aula 08:  Alugramação e posicionamento com divs (opcional)
+nome_arquivo: index.html
+nome_exercicio: Aula 08: Alugramação e posicionamento com divs (opcional)
+nome_aluno: Laura dos Santos Neiva
+email_aluno: laura.neiva@portalsesisp.org.br
+turma: TDE-1BHH-26
+*/
+
+body {
+    font-family: Arial, sans-serif;
 }
-.container{
-    width:90% ;
+
+.container {
+    width: 90%;
     margin: 0 auto;
-    border:1px #f9afaf
-    padding: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
-.coluna-principal{
+
+.coluna-principal {
     float: left;
-    width: 65%;
-    background-color: aliceblue;
+    width: 60%;
+    background-color: #f0f8ff;
     padding: 15px;
-    box-sizing: border-box;
 }
-.coluna-secundaria{
+
+.coluna-secundaria {
     float: right;
     width: 30%;
-    background-color: aliceblue;
+    background-color: #e6f7ff;
     padding: 15px;
-    box-sizing: border-box;
 }
-.limpa flutuação{
+
+.limpa-flutuacao {
     clear: both;
 }
-.botão fixo{
+
+.botao-fixo {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: antiquewhite;
-    color: whitesmoke;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 2 px 2px 5px rgb(red, green, blue);
-    z-index: 100;
-}
+    background-color: #b0e6b2;
