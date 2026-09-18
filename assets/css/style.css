@@ -1,4 +1,4 @@
-/* Reset e Configurações Gerais */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #DCEBFB; /* Fundo geral exato do Wireframe */
+    background-color: #DCEBFB; 
     color: #16287A;
 }
 
@@ -17,9 +17,8 @@ body {
     margin: 0 auto;
 }
 
-/* Header & Banner Superior */
 .header-hero {
-    background-color: #709DF7; /* Azul do topo do Wireframe */
+    background-color: #709DF7; 
     padding-bottom: 30px;
 }
 
@@ -68,8 +67,6 @@ body {
     align-items: center;
     gap: 5px;
 }
-
-/* Categorias do Menu */
 .categories-nav {
     display: flex;
     gap: 12px;
@@ -78,7 +75,7 @@ body {
 }
 
 .cat-btn {
-    background-color: #95B6F9; /* Azul claro dos cards de abas do topo */
+    background-color: #95B6F9; 
     border: none;
     padding: 10px 18px;
     border-radius: 8px;
@@ -93,8 +90,6 @@ body {
 .cat-btn.active {
     background-color: #B4CCFC;
 }
-
-/* Título Hero */
 .hero-title {
     margin-top: 30px;
 }
@@ -111,8 +106,6 @@ body {
     color: #4A4A4A;
     margin-top: 5px;
 }
-
-/* Barra de Busca */
 .search-bar-container {
     margin-top: 20px;
 }
@@ -133,9 +126,6 @@ body {
     gap: 8px;
     padding: 10px;
     border-right: 1px solid #CCC;
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-                box-shadow 0.3s ease,
-                border-color 0.3s ease;
 }
 
 .input-group:last-of-type {
@@ -167,11 +157,6 @@ body {
     align-items: center;
     gap: 8px;
 }
-
-/* ===================================================
-   Animação e Estilos nos campos de Ida e Volta (Data)
-   =================================================== */
-
 .date-group {
     position: relative;
     cursor: pointer;
@@ -184,8 +169,6 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
 }
-
-/* Esconde o ícone padrão do navegador para usar o do FontAwesome */
 .date-group input[type="date"]::-webkit-calendar-picker-indicator {
     background: transparent;
     bottom: 0;
@@ -199,20 +182,6 @@ body {
     width: auto;
 }
 
-/* Animação Keyframes para o efeito "Pulsar" no clique */
-@keyframes pulseDate {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.06);
-    }
-    100% {
-        transform: scale(1.03);
-    }
-}
-
-/* Aplicação da Animação ao Focar/Clicar no campo */
 .input-group.date-group:focus-within {
     animation: pulseDate 0.35s ease-out forwards;
     box-shadow: 0 4px 15px rgba(22, 40, 122, 0.25);
@@ -222,13 +191,10 @@ body {
     z-index: 2;
 }
 
-/* Inclinada no ícone ao clicar */
 .input-group.date-group:focus-within i {
     color: #16287A;
     transform: rotate(-10deg) scale(1.15);
 }
-
-/* Seção Principal de Cards */
 .main-section {
     background-color: #EBF3FC;
     border-radius: 20px;
@@ -303,8 +269,6 @@ body {
     font-weight: 800;
     color: #000000;
 }
-
-/* Rodapé */
 .footer {
     background-color: #709DF7;
     padding: 40px 0;
