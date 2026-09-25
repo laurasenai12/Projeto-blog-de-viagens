@@ -10,10 +10,10 @@ header nav{
 header nav ul{
     list-style: none;
     position: relative;
-    height: 30px;
+    height: 35px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 45px;
 }
 header nav ul li{
     position:relative;
@@ -24,7 +24,7 @@ table {
 }
 main{
     background-color: beige;
-    padding: 5px;
+    padding: 4px;
 }
 main table {
     width: 900px;
@@ -42,9 +42,11 @@ main table td img:hover{
 }
 main table td img:{
     width: 30px;
+    vertical-align: middle;
+}
 }
 main table tr:first-child th {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     padding: 15px;
 }
