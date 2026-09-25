@@ -12,6 +12,8 @@ header nav ul{
     position: relative;
     height: 30px;
     display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 header nav ul li{
     position:relative;
