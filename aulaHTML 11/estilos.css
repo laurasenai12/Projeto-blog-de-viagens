@@ -1,0 +1,44 @@
+header{
+    background-color:#f9dceb ;
+    padding: 5px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+header nav{
+    background-color: beige;
+}
+header nav ul{
+    list-style: none;
+    position: relative;
+    height: 30px;
+    display: flex;
+}
+header nav ul li{
+    position:relative;
+    display: flex;
+}
+table {
+    margin: 30px auto;
+}
+main{
+    background-color: beige;
+    padding: 5px;
+}
+main table {
+    width: 500px;
+    border: 1px solid
+}
+main table td, main table th {
+    border:1px solid;
+    color:rgb(82, 8, 8)
+}
+main table td img:hover{
+    width: 150px;
+}
+footer{
+    background-color:#f9dceb;
+    text-align: center;
+    padding: 1px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
