@@ -44,9 +44,8 @@ main table td img:{
     width: 30px;
     vertical-align: middle;
 }
-}
 main table tr:first-child th {
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     padding: 15px;
 }
