@@ -1,26 +1,70 @@
-# Aula 01: Introdução à Web e Linguagens de Marcação
+# Projeto Nova-Web - Especificações de UI/UX (Tela de Login)
 
+## 1. Conceitos de Usabilidade em Formulários
 
-### Parte 1: Engenharia Reversa de Sintaxe
+### Labels vs. Placeholders
 
-***1 - Qual dos trechos foca estritamente na semântica personalizada de dados sem se preocupar em como a informação será exibida visualmente na tela? Justifique.***
-Trecho C, porque o xml permite criar tags customizadas como os que aparecem na imagem, e definem o significado e transporte dos dados entre sistemas, sem regras de apresentação visual.
+A **label** identifica de forma permanente o que deve ser preenchido em um campo, como "E-mail" ou "Senha". Ela continua visível mesmo depois que o usuário começa a digitar.
 
-***2 -  Pensando em produtividade para documentar um código no repositório, qual sintaxe é mais eficiente e limpa para o desenvolvedor escrever?***
-O markdown, porque ele é extremamente leve e legível para as pessoas e para os computadores, e também não precisa de tags complexas.
+O **placeholder** é apenas uma dica ou exemplo do formato esperado. Ele não deve substituir a label, pois desaparece quando o usuário começa a preencher o campo e pode dificultar a identificação do conteúdo solicitado.
 
-***3 - Se você precisasse criar a página principal de uma loja virtual para o usuário final navegar, qual das três opções seria obrigatoriamente a base estrutural?***
-Trecho A, porque o html é a linguagem que é mais usada interpretada pelos navegadores web para estruturar e exibir conteúdo para o usuário final.
+Por isso, no formulário de login, cada campo terá uma **label visível** e o placeholder será utilizado somente como informação complementar, quando necessário.
 
-### Parte 2: Auditoria de Infraestrutura Real
+### Hierarquia Visual
 
-***Consulta de Valores de Mercado***: O valor é R$ 40,00 por ano. É possível pagar por períodos de até 10 anos de uma só vez, com opções de desconto progressivo para mais de um ano. Em 5 anos, o valor fica R$ 184,00.
+O botão de ação principal deve receber maior destaque visual para indicar a ação mais importante da tela.
 
-***Rastreamento de IP (DNS na prática)***: Eu escolhi o site da globo (globo.com). O endereço IPv4 foi `186.192.83.12`.
+* **Primary Button:** será utilizado para a ação principal, como **"Entrar"**, com maior destaque de cor e contraste.
+* **Secondary Button/Action:** será utilizado para ações secundárias, como **"Criar Conta"** e **"Esqueci a Senha"**, com menor destaque visual.
 
-***Ferramenta Whois (Investigação de Propriedade)***: 
-**Entidade / Proprietário:** Globo Comunicação e Participações SA
-**CNPJ / Documento:** 27.865.757/0024-90
-**Data de criação:** 12/04/2010 (O contato técnico original existe desde 19/06/2000)
-**Data de expiração atual:** 20/09/2032
-**Servidores DNS Responsáveis:** ns01.oghost.com.br; ns04.oghost.com.br e ns03.oghost.com.br
+Essa hierarquia ajuda o usuário a identificar rapidamente qual ação deve ser realizada.
+
+---
+
+## 2. Estados de Validação dos Campos de Entrada (Input States)
+
+Os campos de entrada terão diferentes estados visuais para informar ao usuário a situação atual do preenchimento.
+
+### Default (Padrão)
+
+O campo apresenta uma **borda neutra**, fundo adequado e uma label legível. Esse é o estado inicial antes de qualquer interação.
+
+### Focus (Foco)
+
+Quando o usuário seleciona o campo, ele recebe um **destaque visual**, como alteração na cor da borda ou utilização de um indicador de foco. Isso permite identificar facilmente qual campo está ativo.
+
+### Error (Erro)
+
+Quando o conteúdo preenchido é inválido ou está ausente, o campo apresenta uma **borda em tom vermelho** e uma mensagem explicativa abaixo, informando o problema e como corrigi-lo.
+
+Exemplo: "Digite um e-mail válido."
+
+### Success (Sucesso)
+
+Quando o preenchimento é válido, o campo pode apresentar um **indicador visual de sucesso**, permitindo que o usuário identifique que aquela informação foi preenchida corretamente.
+
+### Disabled (Desabilitado)
+
+Quando um campo ou botão não pode ser utilizado, ele apresenta **contraste reduzido** e aparência diferente dos elementos ativos, indicando que está temporariamente indisponível.
+
+---
+
+## 3. Padrões de Acessibilidade
+
+### Contraste de Cores
+
+Os textos e elementos importantes devem possuir contraste suficiente em relação ao fundo para facilitar a leitura. De acordo com as diretrizes **WCAG**, o contraste mínimo recomendado para texto comum é de **4,5:1**, enquanto textos grandes podem utilizar uma proporção mínima de **3:1**.
+
+### Leitores de Tela
+
+Os campos devem possuir labels associadas corretamente aos inputs para que leitores de tela consigam identificar o que o usuário precisa preencher. As mensagens de erro também devem ser claras e informar qual problema precisa ser corrigido.
+
+### Navegação pela Tecla Tab
+
+Todos os elementos interativos devem poder ser acessados utilizando a tecla **Tab**, seguindo uma ordem lógica de navegação. O estado de foco deve permanecer visualmente identificável para facilitar a navegação sem o uso do mouse.
+
+## Fontes
+
+* W3C Web Accessibility Initiative (WAI) — Web Content Accessibility Guidelines (WCAG): https://www.w3.org/WAI/standards-guidelines/wcag/
+* MDN Web Docs — `<label>`: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label
+* MDN Web Docs — `<input>`: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/inputr
