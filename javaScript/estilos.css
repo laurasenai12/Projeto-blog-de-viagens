@@ -1,6 +1,7 @@
 body{
     margin:5px;
     background-color: rgb(251, 252, 195);
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 .container{
     width:100%;
@@ -8,4 +9,26 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 233, 249);
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}   
+
+.header{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(255, 233, 249);
+}
+
+.button{
+    background-color: rgb(255, 233, 249);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.script{
+    background-color: antiquewhite;
 }
