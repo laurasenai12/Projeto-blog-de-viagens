@@ -1,31 +1,149 @@
-# Análise Técnica — Sistema Corporativo Interno
+# Projeto Nova-Web - Especificações de UI/UX (Tela de Login)
 
-## 1. Mapeamento de Plataformas
+## 1. Conceitos de Usabilidade em Formulários
 
-O sistema corporativo foi projetado inicialmente para utilização em navegadores desktop, considerando que computadores oferecem uma área maior para exibição de informações, principalmente em telas de consulta com tabelas.
+### Labels vs. Placeholders
 
-Em tablets operacionais, a interface deve se adaptar à menor área disponível. Os elementos da navegação precisam permanecer organizados e os botões devem possuir tamanho suficiente para serem acionados por toque.
+A **label** identifica permanentemente o campo e informa ao usuário qual informação deve ser preenchida. Ela permanece visível mesmo depois que o usuário começa a digitar.
 
-Em coletores ou dispositivos móveis, a interface deve priorizar informações essenciais, reduzindo a quantidade de elementos exibidos simultaneamente. Campos e botões precisam ter áreas de toque maiores e a tabela pode ser adaptada para apresentar apenas as informações mais importantes.
+O **placeholder** serve apenas como uma informação complementar ou exemplo do formato esperado. Ele desaparece quando o usuário começa a preencher o campo.
 
-Dessa forma, o sistema mantém a mesma estrutura e identidade visual, mas adapta a distribuição dos elementos de acordo com o dispositivo utilizado.
+Por isso, o placeholder não deve substituir a label, pois o usuário pode esquecer o que deve informar depois que o texto desaparece.
 
-## 2. Capacidade da Plataforma Computacional
+### Hierarquia Visual
 
-A quantidade de informações exibidas influencia diretamente a utilização do sistema. Em computadores, é possível utilizar tabelas com várias colunas, filtros e informações detalhadas devido ao maior espaço disponível na tela.
+O botão de ação principal deve possuir maior destaque visual, pois representa a ação mais importante da tela.
 
-Em tablets e dispositivos móveis, uma quantidade muito grande de informações pode dificultar a leitura e a interação. Por isso, o projeto deve utilizar uma organização mais simples, com botões e áreas de clique adequadas ao tamanho da tela.
+No formulário de login, o botão **"Entrar"** será o Primary Button, utilizando maior destaque de cor e preenchimento.
 
-O tamanho dos elementos também influencia a operação. Botões muito pequenos podem dificultar a interação em telas sensíveis ao toque, enquanto elementos muito grandes podem ocupar espaço desnecessário. Por isso, o projeto busca equilibrar quantidade de informações, legibilidade e facilidade de interação.
+Ações secundárias, como **"Esqueci minha senha"** e **"Criar conta"**, terão menor destaque visual, utilizando textos ou botões em estilo secundário.
 
-## 3. Princípios do Projeto de Software
+---
 
-O projeto utiliza princípios de **usabilidade, consistência e organização**.
+## 2. Estados de Validação dos Campos de Entrada
 
-A usabilidade está presente na estrutura simples das telas, na identificação clara dos campos de login, na busca de funcionários e na organização das informações em tabela.
+### Default
 
-A consistência é aplicada por meio da repetição de elementos visuais, como botões, campos, cabeçalho e menu lateral. A utilização de componentes no Figma permite manter o mesmo padrão visual em diferentes partes do sistema.
+Representa o estado normal do campo antes de qualquer interação.
 
-A organização também facilita a navegação. O menu lateral apresenta as principais áreas do sistema, enquanto o dashboard concentra informações importantes e a tela de consulta permite localizar funcionários por meio do campo de busca.
+- Borda em cor neutra.
+- Label sempre visível.
+- Fundo claro.
+- Texto de preenchimento legível.
 
-A arquitetura das telas segue uma estrutura comum de sistemas corporativos: autenticação, acesso ao painel principal e consulta de dados. Essa divisão facilita a compreensão do sistema e permite que novas funcionalidades sejam adicionadas posteriormente.
+### Focus
+
+Representa o momento em que o usuário seleciona o campo.
+
+- A borda recebe uma cor de destaque.
+- O campo permanece com a label visível.
+- O destaque facilita a identificação do campo que está sendo preenchido.
+
+### Error
+
+Indica que existe algum problema com o valor informado.
+
+- Borda em tom vermelho.
+- Mensagem explicativa abaixo do campo.
+- A mensagem deve explicar o problema de forma clara.
+
+Exemplo:
+
+> E-mail ou senha inválidos.
+
+### Success
+
+Indica que o preenchimento foi realizado corretamente.
+
+- Borda em tom de verde.
+- Indicador visual de preenchimento correto.
+- Feedback visual simples e fácil de identificar.
+
+### Disabled
+
+Indica que o campo ou botão não está disponível para interação.
+
+- Contraste reduzido.
+- Fundo e texto em tons mais claros.
+- Não deve parecer um elemento disponível para interação.
+
+---
+
+## 3. Padrões de Acessibilidade
+
+A interface deve utilizar contraste suficiente entre textos e seus respectivos fundos para facilitar a leitura.
+
+As informações não devem ser apresentadas somente por meio de cores. Estados de erro e sucesso também devem possuir textos ou indicadores visuais.
+
+Os campos devem possuir labels claras e a ordem de navegação deve permitir que o usuário percorra os elementos utilizando a tecla **Tab**.
+
+A estrutura deve ser compatível com tecnologias assistivas, utilizando informações claras para que leitores de tela possam identificar os campos e suas funções.
+
+---
+
+## 4. Design System
+
+### Input
+
+O componente de input terá quatro variantes:
+
+- Default
+- Focus
+- Error
+- Success
+
+Cada estado possuirá sua própria aparência visual e poderá apresentar um texto de apoio quando necessário.
+
+### Botão
+
+O componente de botão terá dois tipos principais:
+
+- Primary
+- Secondary
+
+O Primary será utilizado para a ação principal **"Entrar"**.
+
+O Secondary será utilizado para ações complementares, como **"Criar conta"**.
+
+Os botões também possuirão os estados:
+
+- Default
+- Hover
+- Disabled
+
+---
+
+## 5. Estrutura da Tela de Login
+
+A tela de login será composta por:
+
+- Logo da aplicação;
+- Título da página;
+- Campo de e-mail;
+- Campo de senha;
+- Opção para exibir ou ocultar a senha;
+- Checkbox "Lembrar de mim";
+- Link "Esqueci minha senha";
+- Botão principal "Entrar";
+- Divisor visual;
+- Link "Criar conta".
+
+A estrutura será centralizada para facilitar a identificação do formulário e manter uma organização visual simples.
+
+---
+
+## 6. Protótipo
+
+O protótipo será desenvolvido no Figma utilizando componentes e variantes.
+
+Será criado um fluxo de login contendo:
+
+1. Tela inicial de login;
+2. Interação dos campos;
+3. Estados visuais dos componentes;
+4. Validação de autenticação;
+5. Tela com mensagem de erro para credenciais inválidas.
+
+A mensagem de erro utilizada será:
+
+**"E-mail ou senha inválidos."**
