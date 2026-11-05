@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login - Rota Livre</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <header class="topo-login">
+        <a href="index.html"><img src="assets/imagens/Logo 2.png" alt="Rota Livre"></a>
+    </header>
+    <main class="area-login">
+        <section class="caixa-login">
+            <div id="form-login">
+                <h1>Login</h1>
+                <form onsubmit="entrar(event)">
+                    <label for="email-login">Email:</label>
+                    <input type="email" id="email-login" required>
+
+                    <label for="senha-login">Senha:</label>
+                    <input type="password" id="senha-login" required>
+
+                    <button type="submit">Entrar</button>
+                </form>
+                <a href="#" class="esqueci" onclick="esqueciSenha(event)">Esqueci minha senha</a>
+                <p>Não tem uma conta?<a href="#" onclick="mostrarCadastro(event)">Criar uma.</a></p>
+            </div>
+            <div id="form-cadastro" class="escondido">
+                <h1>Criar Conta</h1>
+                <form onsubmit="cadastrar(event)">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome"
+                        placeholder="Digite seu nome" required>
+
+                    <label for="email-cadastro">Email:</label>
+                    <input type="email" id="email-cadastro"
+                        placeholder="Digite seu email" required>
+
+                    <label for="senha-cadastro">Senha:</label>
+                    <input type="password" id="senha-cadastro"
+                        placeholder="Crie uma senha" minlength="8" required>
+
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input type="password" id="confirmar-senha"
+                        placeholder="Repita sua senha" minlength="8" required>
+
+                    <button type="submit">Cadastrar</button>
+                </form>
+                <p>Já tem uma conta?<a href="#" onclick="mostrarLogin(event)">Fazer login.</a></p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function mostrarCadastro(event) {
+            event.preventDefault();
+            document.getElementById('form-login').classList.add('escondido');
+            document.getElementById('form-cadastro').classList.remove('escondido');
+        }
+
+        function mostrarLogin(event) {
+            event.preventDefault();
+            document.getElementById('form-cadastro').classList.add('escondido');
+            document.getElementById('form-login').classList.remove('escondido');
+        }
+
+        function entrar(event) {
+            event.preventDefault();
+            const email = document.getElementById('email-login').value;
+            const senha = document.getElementById('senha-login').value;
+            console.log(`Email: ${email}, Senha: ${senha}`);
+            alert("Login realizado com sucesso!");
+        }
+
+        function cadastrar(event) {
+            event.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email-cadastro').value;
+            const senha = document.getElementById('senha-cadastro').value;
+            const confirmarSenha = document.getElementById('confirmar-senha').value;
+
+            if (senha !== confirmarSenha) {
+                alert("As senhas não coincidem!");
+                return;
+            }
+            console.log(`Nome: ${nome}, Email: ${email}, Senha: ${senha}`);
+            alert("Cadastro realizado com sucesso!");
+        }
+
+        function esqueciSenha(event) {
+            event.preventDefault();
+            alert("Funcionalidade de recuperação de senha ainda não implementada.");
+        }
+    </script>
+</body>
+</html>

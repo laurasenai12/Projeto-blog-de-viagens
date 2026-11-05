@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota Livre</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="assets/imagens/Logo 2.png" alt="Logo Rota Livre">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Hospedagens</a></li>
+                    <li><a href="hospedagens.html">Passagens</a></li>
+                    <li><a href="#">Passeios</a></li>
+                    <li><a href="#">Atrações</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Carros</a></li>
+                    <li><a href="login.html" class="conta">Sua Conta</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="apresentacao">
+            <h1>AS MELHORES OFERTAS ESTÃO AQUI!</h1>
+            <p>Encontre ofertas em hotéis, casas, apartamentos e muito mais...</p>
+        </div>
+        <form class="pesquisa">
+            <input type="text" placeholder="Origem">
+            <input type="text" placeholder="Destino">
+            <input type="text" placeholder="Ida">
+            <input type="text" placeholder="Volta">
+            <input type="text" placeholder="Passageiros">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+    <main>
+        <section class="destinos">
+            <nav class="categorias">
+                <button class="categoria ativa" onclick="filtrar('praia', this)">PRAIA</button>
+                <button class="categoria" onclick="filtrar('cidades', this)">CIDADES</button>
+                <button class="categoria" onclick="filtrar('natureza', this)">NATUREZA</button>
+            </nav>
+            <div class="ofertas">
+                <div class="card praia">
+                    <img src="assets/imagens/Porto Seguro - BA" alt="Praia de Porto Seguro">
+                    <h2>PORTO SEGURO - BA</h2>
+                    <p>Hotel + Passagens | sex 27 nov - ter 01 dez</p>
+                    <span>Preço por pessoa:</span>
+                    <strong>R$ 1242</strong>
+                </div>
+                <div class="card praia">
+                    <img src="assets/imagens/Maceió - AL" alt="Praia de Maceió">
+                    <h2>MACEIÓ - AL</h2>
+                    <p>Hotel + Passagens | sex 30 nov - ter 05 dez</p>
+                    <span>Preço por pessoa:</span>
+                    <strong>R$ 2716</strong>
+                </div>
+                <div class="card praia">
+                    <img src="assets/imagens/Fortaleza - CE" alt="Praia de Fortaleza">
+                    <h2>FORTALEZA - CE</h2>
+                    <p>Hotel + Passagens | sex 15 nov - ter 21 nov</p>
+                    <span>Preço por pessoa:</span>
+                    <strong>R$ 1666</strong>
+                </div>
+                <div class="card cidades escondido">
+                    <img src="assets/imagens/sp.jpg" alt="São Paulo">
+                    <h2>SÃO PAULO - SP</h2>
+                    <p>Hotel + Passagens | sex 05 dez - ter 09 dez</p>
+                    <span>Preço por pessoa:</span>
+                    <strong>R$ 1500</strong>
+                </div>
+                <div class="card cidades escondido">
+                    <img src="assets/imagens/barretos.jpeg" alt="Barretos">
+                    <h2>BARRETOS - SP</h2>
+                    <p>Hotel + Passagens | sex 12 dez - ter 16 dez</p>
+                    <span>Preço por pessoa:</span>
+                    <strong>R$ 1800</strong>
+                </div>
+                <div class="card cidades escondido">
+                    <img src="assets/imagens/olimpia.jpeg" alt="Olímpia">
+                    <h2>OLIMPIA - SP</h2>
+                    <p>Hotel + Passagens | sex 19 dez - ter 23 dez</p>
+                    <span>Preço por pessoa:</span>
+                    <strong>R$ 1300</strong>
+                </div>
+                <div class="card natureza escondido">
+                    <img src="assets/imagens/bonito.jpeg" alt="Natureza de Bonito">
+                    <h2>BONITO - MS</h2>
+                    <p>Hotel + Passagens | sex 05 dez - ter 09 dez</p>
+                    <span>Preço por pessoa:</span>
+                    <strong>R$ 1600</strong>
+                </div>
+                <div class="card natureza escondido">
+                    <img src="assets/imagens/chp diamantina.jpg" alt="Chapada Diamantina">
+                    <h2>CHAPADA DIAMANTINA - BA</h2>
+                    <p>Hotel + Passagens | sex 12 dez - ter 16 dez</p>
+                    <span>Preço por pessoa:</span>
+                    <strong>R$ 1900</strong>
+                </div>
+                <div class="card natureza escondido">
+                    <img src="assets/imagens/cmps jordão.jpg" alt="Campos do Jordão">
+                    <h2>CAMPOS DO JORDÃO - SP</h2>
+                    <p>Hotel + Passagens | sex 19 dez - ter 23 dez</p>
+                    <span>Preço por pessoa:</span>
+                    <strong>R$ 2200</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="coluna">
+                <h3>Rota Livre</h3>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Seja um franqueado</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <h3>Compra segura</h3>
+                <ul>
+                    <li><a href="#">Termos e Condições</a></li>
+                    <li><a href="#">Declaração de Privacidade</a></li>
+                    <li><a href="#">Código de Conduta Ética</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h3>Inscreva-se para receber ofertas imperdíveis.</h3>
+                <form>
+                    <input type="text" placeholder="Email">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function filtrar(categoria, botao) {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                if (card.classList.contains(categoria)) {
+                    card.classList.remove('escondido');
+                } else {
+                    card.classList.add('escondido');
+                }
+            });
+            const botoes = document.querySelectorAll('.categoria');
+            botoes.forEach(item => {
+                item.classList.remove('ativa');
+            });
+            botao.classList.add('ativa');
+        }
+    </script>
+</body>
+</html>
