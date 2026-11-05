@@ -1,0 +1,58 @@
+header{
+    background-color:#f9dceb ;
+    padding: 5px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+header nav{
+    background-color: beige;
+}
+header nav ul{
+    list-style: none;
+    position: relative;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+header nav ul li{
+    position:relative;
+    display: flex;
+}
+table {
+    margin: 30px auto;
+}
+main{
+    background-color: beige;
+    padding: 4px;
+}
+main table {
+    width: 900px;
+    border: 1px solid;
+    margin: 30px auto;
+}
+main table td, main table th {
+    border:1px solid;
+    color:rgb(82, 8, 8);
+    padding: 8px;
+    text-align: center;
+}
+main table td img:hover{
+    width: 40px;
+}
+main table td img:{
+    width: 30px;
+    vertical-align: middle;
+}
+main table tr:first-child th {
+    font-size: 50px;
+    text-align: center;
+    padding: 15px;
+}
+footer{
+    background-color:#f9dceb;
+    text-align: center;
+    padding: 1px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+

@@ -1,0 +1,43 @@
+/*
+Exercícios da Aula 08:  Alugramação e posicionamento com divs (opcional)
+nome_arquivo: index.html
+nome_exercicio: Aula 08: Alugramação e posicionamento com divs (opcional)
+nome_aluno: Laura dos Santos Neiva
+email_aluno: laura.neiva@portalsesisp.org.br
+turma: TDE-1BHH-26
+*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.coluna-principal {
+    float: left;
+    width: 60%;
+    background-color: #f0f8ff;
+    padding: 15px;
+}
+
+.coluna-secundaria {
+    float: right;
+    width: 30%;
+    background-color: #e6f7ff;
+    padding: 15px;
+}
+
+.limpa-flutuacao {
+    clear: both;
+}
+
+.botao-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #b0e6b2;
