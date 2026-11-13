@@ -18,7 +18,6 @@ O **Rota Livre** é um blog de viagens desenvolvido para ajudar usuários a plan
 Os esboços das telas e a arquitetura visual do projeto podem ser consultados nos links abaixo:
 
 - Wireframe do Layout: https://www.figma.com/design/cdGXahKTDNEYofFFCZmvps/Aula-07?node-id=0-1&t=I9CukPznAszrYF1J-1
-- Guia de Estilo: "..\novaweb-projeto-inicial\Guia_de_Estilo_Inicial (1).md"
 
 ## Estrutura Analítica do Projeto (EAP) e Cronograma
 
