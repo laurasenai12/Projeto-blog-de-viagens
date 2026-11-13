@@ -300,3 +300,70 @@ footer {
         padding: 8px;
     }
 }
+
+.topo-login {
+    background-color: #7BAEFE;
+    width: 100%;
+    padding: 15px 40px;
+}
+.topo-login img {
+    width: 180px;
+}
+.area-login {
+    background-color: #E5F4FA;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.caixa-login {
+    background-color: white;
+    width: 400px;
+    padding: 35px;
+    border: 2px solid #7BAEFE;
+    border-radius: 15px;
+    text-align: center;
+}
+.caixa-login h1 {
+    color: #1829A5;
+    margin-bottom: 25px;
+}
+.caixa-login form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.caixa-login label {
+    color: #1829A5;
+    margin-bottom: 5px;
+}
+.caixa-login input {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #7BAEFE;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.caixa-login button {
+    background-color: #1829A5;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.caixa-login a {
+    color: #1829A5;
+}
+.caixa-login p {
+    margin-top: 20px;
+}
+.esqueci {
+    display: block;
+    margin-top: 18px;
+}
+.escondido {
+    display: none;
+}
