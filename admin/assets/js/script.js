@@ -36,3 +36,20 @@ function esqueciSenha(event) {
             event.preventDefault();
             alert("Funcionalidade de recuperação de senha ainda não implementada.");
         }
+
+        
+function filtrar(categoria, botao) {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                if (card.classList.contains(categoria)) {
+                    card.classList.remove('escondido');
+                } else {
+                    card.classList.add('escondido');
+                }
+            });
+            const botoes = document.querySelectorAll('.categoria');
+            botoes.forEach(item => {
+                item.classList.remove('ativa');
+            });
+            botao.classList.add('ativa');
+        }
