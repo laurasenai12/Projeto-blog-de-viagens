@@ -14,7 +14,9 @@ function entrar(event) {
     const email = document.getElementById('email-login').value;
     const senha = document.getElementById('senha-login').value;
 
-    if (email !== "" && senha !== "") {
+    if (email === "lauraadm@gmail.com" && senha === "lauraadm2904") {
+        window.location.href = "dashboard.html";
+    } else {
         window.location.href = "index.html";
     }
 }
