@@ -1,11 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Consultas - Rota Livre</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
-<body>
-    
+<body class="pagina-consulta">
+    <header class="topo-consulta">
+        <img src="assets/imagens/Logo 2.png" alt="Rota Livre" class="logo-consulta">
+        <div class="acoes-topo">
+            <a href="#" title="Ajuda">ⓘ</a>
+            <button onclick="abrirMenu()">☰</button>
+        </div>
+    </header>
+    <aside class="menu-consulta">
+        <a href="index.html" class="voltar-consulta">« Voltar</a>
+        <nav>
+            <a href="dashboard.html">▱ Dashboard</a>
+            <a href="#">✈ Viagens</a>
+            <a href="consulta.html" class="selecionado">⌕ Consultas</a>
+            <a href="#">Relatórios</a>
+            <a href="#">♙ Usuários</a>
+            <a href="#">⚙ Configurações</a>
+        </nav>
+        <div class="perfil-consulta">
+            <span class="icone-perfil">♙</span>
+            <div>
+                <strong>Laura Neiva</strong>
+                <small>Desenvolvedora</small>
+            </div>
+        </div>
+    </aside>
+    <main class="conteudo-consulta">
+        <section class="cabecalho-pagina">
+            <h1>Consultas</h1>
+            <p>Consulte as informações cadastradas no sistema.</p>
+        </section>
+        <section class="barra-consulta">
+            <input type="text" id="pesquisa" placeholder="⌕  Pesquisar..." onkeyup="filtrarTabela()">
+            <button class="botao-filtrar" onclick="mostrarFiltro()">♧ Filtrar</button>
+            <select id="filtroStatus" onchange="filtrarTabela()">
+                <option value="Todos">Todos os status</option>
+                <option value="Confirmada">Confirmada</option>
+                <option value="Pendente">Pendente</option>
+            </select>
+        </section>
+        <section class="area-tabela">
+            <table id="tabela-consulta">
+                <thead>
+                    <tr>
+                        <th>Destino</th>
+                        <th>Data</th>
+                        <th>Cliente</th>
+                        <th>Status</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Poços de Caldas</td>
+                        <td>10/10/2026</td>
+                        <td>Maria Zanotto</td>
+                        <td><span class="status-confirmada">Confirmada</span></td>
+                        <td class="acoes-tabela">
+                            <button onclick="visualizar('Poços de Caldas')">⊘</button>
+                            <button onclick="informacoes('Poços de Caldas', 'Maria Zanotto')">ⓘ</button>
+                            <button onclick="editar('Poços de Caldas')">✎</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Olímpia</td>
+                        <td>15/10/2026</td>
+                        <td>Yasmin Esposto</td>
+                        <td><span class="status-pendente">Pendente</span></td>
+                        <td class="acoes-tabela">
+                            <button onclick="visualizar('Olímpia')">⊘</button>
+                            <button onclick="informacoes('Olímpia', 'Yasmin Esposto')">ⓘ</button>
+                            <button onclick="editar('Olímpia')">✎</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Monte Verde</td>
+                        <td>20/10/2026</td>
+                        <td>Larah Lima</td>
+                        <td><span class="status-confirmada">Confirmada</span></td>
+                        <td class="acoes-tabela">
+                            <button onclick="visualizar('Monte Verde')">⊘</button>
+                            <button onclick="informacoes('Monte Verde', 'Larah Lima')">ⓘ</button>
+                            <button onclick="editar('Monte Verde')">✎</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fortaleza</td>
+                        <td>25/10/2026</td>
+                        <td>Samuel Jesus</td>
+                        <td><span class="status-pendente">Pendente</span></td>
+                        <td class="acoes-tabela">
+                            <button onclick="visualizar('Fortaleza')">⊘</button>
+                            <button onclick="informacoes('Fortaleza', 'Samuel Jesus')">ⓘ</button>
+                            <button onclick="editar('Fortaleza')">✎</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Campos do Jordão</td>
+                        <td>30/10/2026</td>
+                        <td>Mileny Pereira</td>
+                        <td><span class="status-pendente">Pendente</span></td>
+                        <td class="acoes-tabela">
+                            <button onclick="visualizar('Campos do Jordão')">⊘</button>
+                            <button onclick="informacoes('Campos do Jordão', 'Mileny Pereira')">ⓘ</button>
+                            <button onclick="editar('Campos do Jordão')">✎</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Maragogi</td>
+                        <td>24/11/2026</td>
+                        <td>Arthur Alves</td>
+                        <td><span class="status-pendente">Pendente</span></td>
+                        <td class="acoes-tabela">
+                            <button onclick="visualizar('Maragogi')">⊘</button>
+                            <button onclick="informacoes('Maragogi', 'Arthur Alves')">ⓘ</button>
+                            <button onclick="editar('Maragogi')">✎</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td>26/12/2026</td>
+                        <td>Luiz Oliveira</td>
+                        <td><span class="status-confirmada">Confirmada</span></td>
+                        <td class="acoes-tabela">
+                            <button onclick="visualizar('Rio de Janeiro')">⊘</button>
+                            <button onclick="informacoes('Rio de Janeiro', 'Luiz Oliveira')">ⓘ</button>
+                            <button onclick="editar('Rio de Janeiro')">✎</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="sem-resultados">Nenhum resultado encontrado.</p>
+        </section>
+        <div class="paginacao-consulta">
+            <button onclick="mudarPagina(1)"><</button>
+            <button class="pagina-ativa" onclick="mudarPagina(1)">1</button>
+            <button onclick="mudarPagina(2)">2</button>
+            <button onclick="mudarPagina(3)">3</button>
+            <button onclick="mudarPagina(4)">4</button>
+            <button onclick="mudarPagina(5)">5</button>
+            <button onclick="mudarPagina(6)">6</button>
+            <button onclick="mudarPagina(2)">></button>
+        </div>
+    </main>
 </body>
 </html>
+

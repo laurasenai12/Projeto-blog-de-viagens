@@ -55,3 +55,56 @@ function filtrar(categoria, botao) {
             });
             botao.classList.add('ativa');
         }
+
+
+function filtrarTabela() {
+            var pesquisa = document.getElementById("pesquisa").value.toLowerCase();
+            var filtro = document.getElementById("filtroStatus").value;
+
+            var tabela = document.getElementById("tabela-consulta");
+            var linhas = tabela.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+
+            var encontrados = 0;
+
+            for (var i = 0; i < linhas.length; i++) {
+                var texto = linhas[i].textContent.toLowerCase();
+                var status = linhas[i].getElementsByTagName("td")[3].textContent.trim();
+                if (
+                    texto.includes(pesquisa) &&
+                    (filtro == "Todos" || status == filtro)
+                ) {
+                    linhas[i].style.display = "";
+                    encontrados++;
+                } else {
+                    linhas[i].style.display = "none";
+                }
+            }
+            document.getElementById("sem-resultados").style.display =
+                encontrados == 0 ? "block" : "none";
+        }
+        function mostrarFiltro() {
+            var filtro = document.getElementById("filtroStatus");
+
+            if (filtro.style.display == "block") {
+                filtro.style.display = "none";
+            } else {
+                filtro.style.display = "block";
+            }
+
+        }
+
+        function visualizar(destino) {
+            alert("Visualizando viagem para: " + destino);
+        }
+        function informacoes(destino, cliente) {
+            alert("Destino: " + destino + "\nCliente: " + cliente);
+        }
+        function editar(destino) {
+            alert("Edição da viagem: " + destino);
+        }
+        function mudarPagina(numero) {
+            alert("Página " + numero);
+        }
+        function abrirMenu() {
+            alert("Menu do sistema");
+        }
