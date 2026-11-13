@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Rota Livre</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body class="dashboard">
+    <header class="header-dashboard">
+        <div class="logo-dashboard">
+            <a href="index.html"><img src="assets/imagens/Logo 2.png" alt="Rota Livre"></a>
+        </div>
+        <div class="acoes-dashboard">
+            <a href="#" class="ajuda">?</a>
+            <a href="#" class="menu-hamburguer">☰</a>
+        </div>
+    </header>
+    <div class="estrutura-dashboard">
+        <aside class="menu-lateral">
+            <a href="index.html" class="voltar-dashboard">« Voltar</a>
+            <nav>
+                <ul>
+                    <li class="selecionado"><a href="dashboard.html">♧ Dashboard</a></li>
+                    <li><a href="#">✈ Viagens</a></li>
+                    <li><a href="consulta.html">⌕ Consultas</a></li>
+                    <li><a href="#">♧ Relatórios</a></li>
+                    <li><a href="#">♙ Usuários</a></li>
+                    <li><a href="#">⚙ Configurações</a></li>
+                </ul>
+            </nav>
+            <div class="usuario-dashboard">
+                <div class="icone-usuario">♙</div>
+                <div>
+                    <strong>Laura Neiva</strong>
+                    <span>Desenvolvedora</span>
+                </div>
+            </div>
+        </aside>
+        <main class="conteudo-dashboard">
+            <section class="titulo-dashboard">
+                <h1>Olá, Laura!</h1>
+                <p>Bem vinda ao seu painel de dashboard.</p>
+            </section>
+            <section class="painel-superior">
+                <div class="estatisticas">
+                    <h2>ESTATÍSTICAS DE VENDAS DE VIAGENS</h2>
+                    <div class="indicadores-dashboard">
+                        <div class="indicador">
+                            <div class="icone-indicador rosa">♧</div>
+                            <div>
+                                <span>SOLICITAÇÕES</span>
+                                <strong class="vermelho">467</strong>
+                            </div>
+                        </div>
+                        <div class="indicador">
+                            <div class="icone-indicador verde">▤</div>
+                            <div>
+                                <span>INGRESSOS VENDIDOS</span>
+                                <strong class="verde-texto">334</strong>
+                            </div>
+                        </div>
+                        <div class="indicador">
+                            <div class="icone-indicador roxo">⌁</div>
+                            <div>
+                                <span>LUCROS TOTAIS</span>
+                                <strong class="roxo-texto">R$ 15.000</strong>
+                            </div>
+                        </div>
+                        <div class="indicador">
+                            <div class="icone-indicador coral">▥</div>
+                            <div>
+                                <span>PERDA TOTAL</span>
+                                <strong class="vermelho">R$ 1.500</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grafico-card despesas">
+                    <h2>DESPESAS</h2>
+                    <div class="grafico-linhas">
+                        <div class="linha-fundo"></div>
+                        <div class="linha-fundo"></div>
+                        <div class="linha-fundo"></div>
+                        <div class="linha-fundo"></div>
+                        <svg viewBox="0 0 220 150" preserveAspectRatio="none">
+                            <polyline
+                                points="10,125 45,85 80,80 115,78 150,30 190,20 210,16"
+                                fill="none"
+                                stroke="#4D80F5"
+                                stroke-width="2"
+                            />
+                            <circle cx="10" cy="125" r="2" fill="#4D80F5"/>
+                            <circle cx="45" cy="85" r="2" fill="#4D80F5"/>
+                            <circle cx="80" cy="80" r="2" fill="#4D80F5"/>
+                            <circle cx="115" cy="78" r="2" fill="#4D80F5"/>
+                            <circle cx="150" cy="30" r="2" fill="#4D80F5"/>
+                            <circle cx="190" cy="20" r="2" fill="#4D80F5"/>
+                            <circle cx="210" cy="16" r="2" fill="#4D80F5"/>
+                        </svg>
+                    </div>
+                    <div class="anos">
+                        <span>2021</span>
+                        <span>2022</span>
+                        <span>2023</span>
+                        <span>2024</span>
+                        <span>2025</span>
+                    </div>
+                </div>
+                <div class="grafico-card analises">
+                    <h2>ANÁLISES</h2>
+                    <div class="grafico-rosca">
+                        <div class="rosca"></div>
+                        <div class="legenda-reservas">Reservas<br>68,8%</div>
+                        <div class="legenda-canceladas">Canceladas<br>31,2%</div>
+                    </div>
+                </div>
+            </section>
+            <section class="painel-inferior">
+                <div class="grafico-pontos">
+                    <h2>TOTAL DE PONTOS OBTIDOS</h2>
+                    <div class="valor-pontos">R$ 5.500</div>
+                    <div class="grafico-pontos-area">
+                        <div class="grade-grafico">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <svg viewBox="0 0 500 180" preserveAspectRatio="none">
+                            <polyline
+                                points="15,85 75,145 135,45 195,65 255,15 315,60 375,35 435,75"
+                                fill="none"
+                                stroke="#FF315C"
+                                stroke-width="2.5"
+                            />
+                            <circle cx="15" cy="85" r="3" fill="#78A9F8" stroke="#FF315C" stroke-width="2"/>
+                            <circle cx="75" cy="145" r="3" fill="#78A9F8" stroke="#FF315C" stroke-width="2"/>
+                            <circle cx="135" cy="45" r="3" fill="#78A9F8" stroke="#FF315C" stroke-width="2"/>
+                            <circle cx="195" cy="65" r="3" fill="#78A9F8" stroke="#FF315C" stroke-width="2"/>
+                            <circle cx="255" cy="15" r="3" fill="#78A9F8" stroke="#FF315C" stroke-width="2"/>
+                            <circle cx="315" cy="60" r="3" fill="#78A9F8" stroke="#FF315C" stroke-width="2"/>
+                            <circle cx="375" cy="35" r="3" fill="#78A9F8" stroke="#FF315C" stroke-width="2"/>
+                            <circle cx="435" cy="75" r="3" fill="#78A9F8" stroke="#FF315C" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="meses">
+                        <span>JAN</span>
+                        <span>FEV</span>
+                        <span>MAR</span>
+                        <span>ABR</span>
+                        <span>MAI</span>
+                        <span>JUN</span>
+                        <span>JUL</span>
+                        <span>AGO</span>
+                    </div>
+                </div>
+                <div class="melhores-destinos">
+                    <h2>DESTINOS COM MELHORES AVALIAÇÕES</h2>
+                    <div class="imagens-destinos">
+                        <img src="assets/imagens/chp diamantina.jpg" alt="Chapada Diamantina">
+                        <img src="assets/imagens/bonito.jpeg" alt="Bonito">
+                        <img src="assets/imagens/Porto Seguro - BA" alt="Porto Seguro">
+                        <img src="assets/imagens/Maceió - AL" alt="Maceió">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
 
