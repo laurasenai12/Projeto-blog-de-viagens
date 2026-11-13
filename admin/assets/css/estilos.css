@@ -834,8 +834,8 @@ footer {
 .menu-consulta {
     position: fixed;
     top: 68px;
-    left: 30px;
-    width: 158px;
+    left: 1px;
+    width: 180px;
     height: calc(100vh - 80px);
     background-color: #7BAEFE;
     display: flex;
@@ -896,7 +896,7 @@ footer {
     color: #003FA4;
 }
 .conteudo-consulta {
-    margin-left: 188px;
+    margin-left: 180px;
     padding: 8px 30px 25px;
 }
 .cabecalho-pagina h1 {
@@ -959,12 +959,12 @@ footer {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
 }
 #tabela-consulta thead {
     background-color: #73A9FF;
     color: #003FA4;
-    height: 34px;
+    height: 40px;
 }
 #tabela-consulta th {
     font-size: 11px;
@@ -980,10 +980,10 @@ footer {
 .status-confirmada,
 .status-pendente {
     display: inline-block;
-    width: 116px;
+    width: 120px;
     padding: 3px 0;
     border-radius: 20px;
-    font-size: 9px;
+    font-size: 12px;
 }
 .status-confirmada {
     background-color: #A4EBAE;
@@ -1001,15 +1001,15 @@ footer {
     background: none;
     color: black;
     cursor: pointer;
-    font-size: 14px;
-    padding: 3px;
+    font-size: 15px;
+    padding: 10px;
 }
 .acoes-tabela button:hover {color: #003FA4;}
 .paginacao-consulta {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 9px;
+    gap: 15px;
     margin-top: 12px;
 }
 .paginacao-consulta button {
